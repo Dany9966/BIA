@@ -1,0 +1,3 @@
+parent(this,that).
+parent(that,another).
+parent(this,dis).
