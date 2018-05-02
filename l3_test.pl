@@ -1,0 +1,5 @@
+factorial(0,1) :- !.
+factorial(N,F) :-
+    NP is N-1,
+    factorial(NP,FP),
+    F is FP*N.

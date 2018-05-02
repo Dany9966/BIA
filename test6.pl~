@@ -1,0 +1,2 @@
+rotatelist(R,[H|T]) :- append(T,[H],R).
+printfirst(L) :- first(E,L), write(E).

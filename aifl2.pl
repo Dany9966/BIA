@@ -10,4 +10,5 @@ child(X,Y) :- father(Y,X).
 brother(X,Y) :- child(X,Z),child(Y,Z),not(X=Y).
 pred(X,Y) :- father(X,Y) ; father(Z,Y),pred(X,Z).
 nephew(X,Y) :- brother(Y,Z),child(X,Z).
+grandchild(X,Y) :- child(X,Z),child(Z,Y),not(X=Y).
 
